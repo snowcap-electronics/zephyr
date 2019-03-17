@@ -1,0 +1,11 @@
+# Kconfig - Snowcap STM32F4 v1 board configuration
+#
+# Copyright (c) 2016 Linaro Limited.
+# Copyright (c) 2019 Tuomas Kulve
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config BOARD_SNOWCAP_STM32F4V1
+	bool "Snowcap STM32F4 v1 Board"
+	depends on SOC_STM32F405XG

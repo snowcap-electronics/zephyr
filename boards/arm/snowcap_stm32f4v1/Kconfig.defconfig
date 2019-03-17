@@ -1,0 +1,48 @@
+# Kconfig - Snowcap STM32F4 v1 board configuration
+#
+# Copyright (c) 2016 Linaro Limited.
+# Copyright (c) 2019 Tuomas Kulve
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+if BOARD_SNOWCAP_STM32F4V1
+
+config BOARD
+	default "snowcap_stm32f4v1"
+
+if UART_CONSOLE
+
+config UART_2
+	default y
+
+endif # UART_CONSOLE
+
+if I2C
+
+config I2C_1
+	default y
+
+endif # I2C
+
+if SPI
+
+config SPI_1
+	default y
+
+config SPI_2
+	default y
+
+config SPI_STM32_INTERRUPT
+	default y
+
+endif # SPI
+
+if PWM
+
+config PWM_STM32_2
+	default y
+
+endif # PWM
+
+endif # BOARD_SNOWCAP_STM32F4V1

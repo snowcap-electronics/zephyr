@@ -1,0 +1,18 @@
+identifier: snowcap_stm32f4v1
+name: SNOWCAP_STM32F4V1
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - arduino_i2c
+  - pwm
+  - rtc
+  - counter
+  - gpio
+  - i2c
+  - spi
+ram: 192
+flash: 1024
